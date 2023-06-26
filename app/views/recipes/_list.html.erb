@@ -1,0 +1,13 @@
+<% @recipes.each do |recipe| %>
+    <tr>
+    <td><%= recipe.stock_num %></td>
+    <td><%= recipe.shape %></td>
+    <td><%= recipe.size %></td>
+    <td><%= recipe.color %></td>
+    <td><%= recipe.clarity %></td>
+    <td><%= recipe.lab %></td>
+    <td><%= link_to 'Show', recipe_path(recipe) %></td>
+    <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
+    <td><%= link_to 'Destroy', recipe_path(recipe), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+<% end %>

@@ -1,0 +1,2 @@
+class Gemstone < StockItem
+end

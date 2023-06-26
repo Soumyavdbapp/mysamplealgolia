@@ -1,0 +1,2 @@
+class Jewelry < StockItem
+end
